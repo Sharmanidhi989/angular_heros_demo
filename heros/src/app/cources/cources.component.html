@@ -1,1 +1,8 @@
-{{course}}
+<h2>{{course.name | uppercase}}</h2>
+<h2>{{course.id}}</h2>
+<div>
+  <label>name: {{course.name}}
+    <input [(ngModel)]="course.name" placeholder="name"/>
+  </label>
+</div>
+<!-- interpolation pipe -->
